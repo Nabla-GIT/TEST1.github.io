@@ -34,6 +34,8 @@
         const createScene = function () {
             // Creates a basic Babylon Scene object
             const scene = new BABYLON.Scene(engine);
+            scene.clearColor=new BABYLON.Color4(0,0,0,1);
+
             // Creates and positions a free camera
             const camera = new BABYLON.FreeCamera("camera1", 
                 new BABYLON.Vector3(0, 5, -10), scene);
