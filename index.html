@@ -49,8 +49,14 @@
             // Dim the light a small amount - 0 to 1
             light.intensity = 0.7;
 
+
+
+
+
+            var box = BABYLON.MeshBuilder.CreateBox("box", {size: 10}, scene);
+
 		
-            BABYLON.SceneLoader.ImportMesh("", "./Model0", "StanfordBunny.obj", scene);
+            BABYLON.SceneLoader.ImportMesh("", "./Model0/", "StanfordBunny.obj", scene);
 
 
 
