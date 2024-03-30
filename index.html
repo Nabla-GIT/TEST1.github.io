@@ -20,7 +20,7 @@
             }
         </style>
 
-        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="my3dengine.js"></script>
 
     </head>
 
@@ -53,6 +53,8 @@
 
 
 
+var box = BABYLON.MeshBuilder.CreateBox("box", {size: 1}, scene);
+box.position=new BABYLON.Vector3(0,10,0)
 
 		
             BABYLON.SceneLoader.ImportMesh("", "Model0", "StanfordBunny.obj", scene);
